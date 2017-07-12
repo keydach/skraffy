@@ -1,0 +1,6 @@
+*.py[cod]
+.idea
+.project
+.pydevproject
+.cache
+*.orig
