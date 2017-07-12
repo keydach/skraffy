@@ -48,11 +48,19 @@ color_body_program = \
     get_color_from_hex(config_theme.get('color', 'color_body_program'))
 list_color = \
     get_color_from_hex(config_theme.get('color', 'list_color'))
+text_color = \
+    get_color_from_hex(config_theme.get('color', 'text_color'))
+text_link_color = \
+    get_color_from_hex(config_theme.get('color', 'text_link_color'))
+background = \
+    get_color_from_hex(config_theme.get('color', 'background'))
+rectangle = \
+    get_color_from_hex(config_theme.get('color', 'rectangle'))
 
-text_color = config_theme.get('color', 'text_color')
 underline_rst_color = config_theme.get('color', 'underline_rst_color')
 text_key_color = config_theme.get('color', 'text_key_color')
-text_link_color = config_theme.get('color', 'text_link_color')
+text_link_hex = config_theme.get('color', 'text_link_color')
+text_color_hex = config_theme.get('color', 'text_color')
 
 try:  # устанавливаем языковую локализацию
     if not PY2:

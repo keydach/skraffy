@@ -5,7 +5,7 @@
    :align: center
 
 [color=78a5a3ff]
-Copyright (c) 2016 keydach
+Copyright (c) 2016 Easy
 
 [color=#000]Permission is hereby granted, free of charge, to any person obtaining
 a copy of this [color=78a5a3ff]Software [color=#000]and associated documentationfiles

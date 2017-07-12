@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/keydach/git/scraffy/main.py", line 53, in main
+    app.run()
+  File "/usr/lib/python3/dist-packages/kivy/app.py", line 828, in run
+    runTouchApp()
+  File "/usr/lib/python3/dist-packages/kivy/base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "/usr/lib/python3/dist-packages/kivy/core/window/window_sdl2.py", line 663, in mainloop
+    self._mainloop()
+  File "/usr/lib/python3/dist-packages/kivy/core/window/window_sdl2.py", line 405, in _mainloop
+    EventLoop.idle()
+  File "/usr/lib/python3/dist-packages/kivy/base.py", line 342, in idle
+    self.dispatch_input()
+  File "/usr/lib/python3/dist-packages/kivy/base.py", line 327, in dispatch_input
+    post_dispatch_input(*pop(0))
+  File "/usr/lib/python3/dist-packages/kivy/base.py", line 293, in post_dispatch_input
+    wid.dispatch('on_touch_up', me)
+  File "kivy/_event.pyx", line 718, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:8191)
+  File "/usr/local/lib/python3.5/dist-packages/kivymd/ripplebehavior.py", line 68, in on_touch_up
+    return super(CommonRipple, self).on_touch_up(touch)
+  File "/usr/local/lib/python3.5/dist-packages/kivymd/button.py", line 206, in on_touch_up
+    return super(BaseButton, self).on_touch_up(touch)
+  File "/usr/lib/python3/dist-packages/kivy/uix/behaviors/button.py", line 179, in on_touch_up
+    self.dispatch('on_release')
+  File "kivy/_event.pyx", line 714, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:8146)
+  File "kivy/_event.pyx", line 1225, in kivy._event.EventObservers.dispatch (kivy/_event.c:14035)
+  File "kivy/_event.pyx", line 1109, in kivy._event.EventObservers._dispatch (kivy/_event.c:12816)
+  File "/usr/lib/python3/dist-packages/kivy/lang/builder.py", line 64, in custom_callback
+    exec(__kvlang__.co_value, idmap)
+  File "/home/keydach/git/scraffy/libs/uix/kv/activity/createaccount.kv", line 49, in <module>
+    snackbar.make(app.data.string_lang_not_valid_username)
+AttributeError: module 'kivymd.snackbar' has no attribute 'make'

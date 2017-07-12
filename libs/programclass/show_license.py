@@ -14,6 +14,7 @@ from libs.uix.dialogs import dialog, card
 
 
 class ShowLicense(object):
+
     def show_license(self, *args):
         def choice_language_license(on_language):
             window = dialog(text=self.data.string_lang_wait, title=self.title)

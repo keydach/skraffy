@@ -9,6 +9,7 @@ from libs.uix.dialogs import dialog
 
 
 class ShowAbout(object):
+
     def show_about(self):
         dialog(
             text=self.data.string_lang_about.format(

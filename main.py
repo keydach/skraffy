@@ -11,7 +11,7 @@ import os
 import sys
 import traceback
 
-# sys.dont_write_bytecode = True
+sys.dont_write_bytecode = True
 directory = os.path.split(os.path.abspath(sys.argv[0]))[0]
 
 try:
@@ -27,9 +27,8 @@ try:
     # Указываем пользоваться системным методом ввода, использующимся на
     # платформе, в которой запущенно приложение.
     Config.set('kivy', 'keyboard_mode', 'system')
-    # Config.set('kivy', 'log_level', 'error')
-    # Config.set('graphics', 'width', '400')
-    # Config.set('graphics', 'height', '600')
+    Config.set('graphics', 'width', '350')
+    Config.set('graphics', 'height', '600')
 
     # Activity баг репорта.
     from libs.uix.kv.activity.baseclass.bugreporter import BugReporter
@@ -72,7 +71,8 @@ def main():
                 try:
                     txt = six.moves.urllib.parse.quote(
                         self.win_report.txt_traceback.text.encode('utf-8'))
-                    url = 'git@github.com:keydach/skraffy.git/issues/new?body=' + txt
+                    url = 'https://github.com/HeaTTheatR/Conversations' \
+                          '/issues/new?body=' + txt
                     webbrowser.open(url)
                 except Exception:
                     sys.exit(1)
